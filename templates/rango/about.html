@@ -1,0 +1,23 @@
+{% load staticfiles %}
+
+<html>
+    
+    <head>
+        <title>Rango</title>
+    <head/>
+    
+    <body>
+        <h1>Rango says...</h1>
+        <div>
+            This is the About page! <br />
+            <strong>{{boldmessage}}</strong><br />
+        </div>
+        <div>
+            <a href='/rango/'>Main Page</a><br />
+            <img src="{% static 'images/IMG_3064.JPG' %}" alt="Not a Picture of Rango"/>
+            <img src="{{ MEDIA_URL }}/cat.JPG" alt="Picture of a Cat"/>
+        </div>
+    </body>
+    
+</html>
+        
